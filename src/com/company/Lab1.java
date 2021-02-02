@@ -1,17 +1,18 @@
 package com.company;
-
+/**
+ * Номер залікової книги 331;
+ * int C2 = 1; (О1 = -);
+ * int C3 = 1;
+ * int C5 = 1; (О2 = /);
+ * int C7 = 2; (Тип = int);
+ */
 public class Lab1 {
     public static void main(String[] args) {
-//        Номер залікової книги 331
-//        int C2 = 1; (О1 = -)
-//        int C3 = 1;
-//        int C5 = 1; (О2 = /)
-//        int C7 = 2; (Тип = int)
         System.out.println("Номер заліковки «331».");
         final int C = 1;
         int a = 2;
         int b = 1;
-        int n = 5;
+        int n = 55555;
         int m = 5;
         double S = 0;
         if (a <= 1 || b <= 0) {

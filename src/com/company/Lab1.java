@@ -16,7 +16,7 @@ public class Lab1 {
         double res = 0;
         for (int i = a; i <= n; i++) {
             for (int j = b; j <= m; j++) {
-                res = res + ((double)(i/j)/(i-C));
+                res = res + ((double) (i / j) / (i - C));
             }
         }
         System.out.printf("Результат: %.2f.", res);

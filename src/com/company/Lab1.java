@@ -7,7 +7,7 @@ public class Lab1 {
 //        int C3 = 1;
 //        int C5 = 1; (О2 = /)
 //        int C7 = 2; (Тип = int)
-
+        System.out.println("Номер заліковки «331».");
         final int C = 1;
         int a = 2;
         int b = 1;
@@ -19,6 +19,6 @@ public class Lab1 {
                 res = res + ((double)(i/j)/(i-C));
             }
         }
-        System.out.println(res);
+        System.out.printf("Результат: %.2f.", res);
     }
 }

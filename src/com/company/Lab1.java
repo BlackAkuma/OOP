@@ -13,16 +13,16 @@ public class Lab1 {
         int b = 1;
         int n = 5;
         int m = 5;
-        double res = 0;
+        double S = 0;
         if (a <= 1 || b <= 0) {
             System.out.println("В одному з кроків відбувається ділення на 0");
             System.exit(0);
         }
         for (int i = a; i <= n; i++) {
             for (int j = b; j <= m; j++) {
-                res = res + ((double) (i / j) / (i - C));
+                S += ((double) (i / j) / (i - C));
             }
         }
-        System.out.printf("Результат: %.2f.", res);
+        System.out.printf("Результат: %.2f.", S);
     }
 }

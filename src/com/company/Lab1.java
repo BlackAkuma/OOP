@@ -1,4 +1,7 @@
 package com.company;
+
+import java.util.Scanner;
+
 /**
  * Номер залікової книги 331;
  * int C2 = 1; (О1 = -);
@@ -8,20 +11,34 @@ package com.company;
  */
 public class Lab1 {
     public static void main(String[] args) {
-        System.out.println("Номер заліковки «331».");
         final int C = 1;
-        int a = 2;
-        int b = 1;
-        int n = 55555;
-        int m = 5;
         double S = 0;
-        if (a <= 1 || b <= 0) {
-            System.out.println("В одному з кроків відбувається ділення на 0");
+
+        Scanner sum = new Scanner(System.in);
+
+        System.out.print("Введіть число a: ");
+        int a = sum.nextInt();
+
+        System.out.print("Введіть число n: ");
+        int n = sum.nextInt();
+
+        System.out.print("Введіть число b: ");
+        int b = sum.nextInt();
+
+        System.out.print("Введіть число m: ");
+        int m = sum.nextInt();
+
+        if (a <= 1 || b <= 0 ) {
+            System.out.println("В одному з кроків відбувається ділення на 0.");
+            System.exit(0);
+        }
+        else if ( a > n || b > m){
+            System.out.println("Число a(b) повинно бути менше рівне n(m). Запускайте програму знову.");
             System.exit(0);
         }
         for (int i = a; i <= n; i++) {
             for (int j = b; j <= m; j++) {
-                S += ((double) (i / j) / (i - C));
+                S += (((double) i / (double) j) / (i - C));
             }
         }
         System.out.printf("Результат: %.2f.", S);
